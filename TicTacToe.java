@@ -1,8 +1,5 @@
-/*===========================
- * Marasinghe MAPG - E/17/207
- * CO225 - Lab 07
- * Tic-Tac-Toe
- * ==========================
+/*
+ * Author - @baqslash
  */
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +16,7 @@ public class TicTacToe implements ActionListener {
 	 * Create the application.
 	 */
 	public TicTacToe() {
-		//Here the buttons for the matrix are created
+		//Buttons for the matrix are created
 		button[0] = new JButton();//creating the button
 		gui.addButton(button[0]);//adding the button to the GUI
 		button[0].addActionListener(this);//setting the action listener
@@ -178,18 +175,18 @@ public class TicTacToe implements ActionListener {
 	
 	public void play(JButton b1, JButton b2, JButton b3) {
 		/*
-		 * This method checks for all the combination of the wins in the game and displays the output
-		 * accoedingly
+		 * Checks for all the combination of the wins in the game and displays the output
+		 * accordingly
 		 */
 		
 		if( (b1.getText().equals(b2.getText())) && (b2.getText().equals(b3.getText())) ) {
 			if(b1.getText().equals("1")) {
 				gui.closeOuterFrame();
-				gui.result("PLAYER 1 WON");
+				gui.result("PLAYER 1 WINS");
 			}
 			else if(b1.getText().equals("2")) {
 				gui.closeOuterFrame();
-				gui.result("PLAYER 2 WON");
+				gui.result("PLAYER 2 WINS");
 			}
 		}
 	}

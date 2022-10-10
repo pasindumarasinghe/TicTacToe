@@ -1,16 +1,11 @@
 /*
- * Marasinghe MAPG - E/17/207
+ * Author - @baqslash
  */
 import javax.swing.*;
 import java.awt.*;
 
 public class GUI {
-	
-	/*This class takes care of the Gaming area and the Result
-	 * 
-	 */
-	
-	//panel and frame for the gaming area
+	//Gaming Area
 	private JPanel panel;
 	private JFrame frame;
 	
